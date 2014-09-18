@@ -1,0 +1,512 @@
+		#contenedor
+		{
+			margin-top: 180px;
+			background: url('../img/fondo.png');
+			width: 920px;
+			height: 195px;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+		}
+			.circulo { 
+			position: absolute;
+			top: -158px;
+			right: -28px;
+			display: block; 
+			width: 180px; 
+			height: 180px; 
+			background: #333; 
+			-webkit-border-radius: 50%; 
+			-moz-border-radius: 50%;  
+			border-radius: 50%; 
+			z-index: 5;
+		} 
+		.contCamion
+		{
+			position: relative;
+			
+			top: 140px;
+			width: 50px;
+			height: 50px;
+			float: right;
+			right: 870px;
+			background-color: red;
+			z-index: 4;
+			-webkit-animation: mover 7s infinite;
+			-moz-animation: mover 7s infinite;
+			-o-animation: mover 7s infinite;
+			-ms-animation: mover 7s infinite;
+			animation: mover 7s infinite;
+		}
+		
+		.whitebox
+		{
+			background-color: white;	
+			top: 120px;
+			right:700px;
+			width: 20px;
+			height: 30px;
+			position: absolute;
+			z-index: 3;					
+			-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+			transform: rotate(10deg);
+			-webkit-animation: animaboxwhite 7s infinite;
+			-moz-animation: animaboxwhite 7s infinite;
+			-o-animation: animaboxwhite 7s infinite;
+			-ms-animation: animaboxwhite 7s infinite;
+			animation: animaboxwhite 7s infinite;
+			
+		}
+
+		.bluebox
+		{
+			top: 120px;
+			right:825px;
+			width: 20px;
+			height: 30px;
+			position: absolute;
+			z-index: 3;		
+			background-color: blue;
+			-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+			transform: rotate(30deg);
+			-webkit-animation: animaboxblue 7s infinite;
+			-moz-animation:  animaboxblue 7s infinite;
+			-o-animation:  animaboxblue 7s infinite;
+			-ms-animation:  animaboxblue 7s infinite;
+			animation:  animaboxblue 7s infinite;
+		}
+		.redbox
+		{
+			top: 120px;
+			right:847px;
+			width: 20px;
+			height: 30px;
+			position: absolute;
+			z-index: 3;		
+			background-color: red;
+			-webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+			transform: rotate(-10deg);
+			-webkit-animation: animaboxred 7s infinite;
+			-moz-animation: animaboxred 7s infinite;
+			-o-animation: animaboxred 7s infinite;
+			-ms-animation: animaboxred 7s infinite;
+			animation: animaboxred 7s infinite;
+		}
+		
+		.yellowbox
+		{
+			top: 112px;
+			right:812px;
+			width: 20px;
+			height: 30px;
+			position: absolute;
+			z-index: 2;		
+			background-color: yellow;
+			-webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+			transform: rotate(-3deg);
+			-webkit-animation: animaboxyellow 7s infinite;
+			-moz-animation: animaboxyellow 7s infinite;
+			-o-animation: animaboxyellow 7s infinite;
+			-ms-animation: animaboxyellow 7s infinite;
+			animation: animaboxyellow 7s infinite;
+		}
+		.greenbox
+		{
+			top: 112px;
+			right:837px;
+			width: 20px;
+			height: 30px;
+			position: absolute;
+			z-index: 2;
+			background-color: green;
+			-webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+			transform: rotate(-20deg);
+			-webkit-animation: animaboxgreen 7s infinite;
+			-moz-animation:  animaboxgreen 7s infinite;
+			-o-animation:  animaboxgreen 7s infinite;
+			-ms-animation:  animaboxgreen 7s infinite;
+			animation:  animaboxgreen 7s infinite;
+		}
+		
+		.camion
+		{
+			opacity: 1;
+			-webkit-animation: muestrate 1s linear;
+			-moz-animation: muestrate 1s linear;
+			-o-animation: muestrate 1s linear;
+			-ms-animation: muestrate 1s linear;
+			animation: muestrate 1s linear;
+		}
+		
+
+
+
+		@-webkit-keyframes muestrate
+		{
+			from {opacity: 0.5;}
+			to {opacity: 1;}
+		}
+
+		@-webkit-keyframes mover {
+		0%  { right: 0px; }
+		9% { right: 100px; }
+		50% { right: 100px; }
+		
+		100%{ right: 870px; }
+		}
+		
+		@-webkit-keyframes animaboxwhite
+		{
+			0%  { top: -30px;right: 20px; }
+			5%  { top: -30px;right: 20px; }
+			10%{top:120px;right: 20px;}
+			50%{top:120px;right: 20px;}
+			100%{top:120px;right:800px; }
+			
+		}
+		@-webkit-keyframes animaboxblue
+		{
+			0%  { top: -30px;right: 45px; }
+			5%  { top: -30px;right: 45px; }
+			10%{top:-30px;right: 45px;}
+			15%{top:120px;right: 45px;}
+			50%{top:120px;right: 45px;}
+			100%{top:120px;right:825px; }
+			
+		}
+
+		@-webkit-keyframes animaboxred
+		{
+			0%  { top: -30px;right: 67px; }
+			5%  { top: -30px;right: 67px; }
+			10%{top:-30px;right: 67px;}
+			15%{top:-30px;right: 67px;}
+			20%{top:120px;right: 67px;}
+			50%{top:120px;right: 67px;}
+			100%{top:120px;right:847px; }
+			
+		}
+
+		@-webkit-keyframes animaboxyellow
+		{
+			0%  { top: -30px;right: 57px; }
+			5%  { top: -30px;right: 57px; }
+			10%{top:-30px;right: 57px;}
+			15%{top:-30px;right: 57px;}
+			20%{top:-30px;right: 57px;}
+			25%{top:112px;right: 57px;}
+			50%{top:112px;right: 57px;}
+			100%{top:112px;right:837px; }
+			
+		}
+
+		@-webkit-keyframes animaboxgreen
+		{
+			0%  { top: -30px;right: 32px; }
+			5%  { top: -30px;right: 32px; }
+			10%{top:-30px;right: 32px;}
+			15%{top:-30px;right: 32px;}
+			20%{top:-30px;right: 32px;}
+			25%{top:-30px;right: 32px;}
+			30%{top:112px;right: 32px;}
+			50%{top:112px;right: 32px;}
+			100%{top:112px;right:812px; }
+			
+		}
+
+		/*Internet explorer*/
+		@-ms-keyframes muestrate
+		{
+			from {opacity: 0.5;}
+			to {opacity: 1;}
+		}
+
+		@-ms-keyframes mover {
+		0%  { right: 0px; }
+		9% { right: 100px; }
+		50% { right: 100px; }
+		
+		100%{ right: 870px; }
+		}
+		
+		@-ms-keyframes animaboxwhite
+		{
+			0%  { top: -30px;right: 20px; }
+			5%  { top: -30px;right: 20px; }
+			10%{top:120px;right: 20px;}
+			50%{top:120px;right: 20px;}
+			100%{top:120px;right:800px; }
+			
+		}
+		@-ms-keyframes animaboxblue
+		{
+			0%  { top: -30px;right: 45px; }
+			5%  { top: -30px;right: 45px; }
+			10%{top:-30px;right: 45px;}
+			15%{top:120px;right: 45px;}
+			50%{top:120px;right: 45px;}
+			100%{top:120px;right:825px; }
+			
+		}
+
+		@-ms-keyframes animaboxred
+		{
+			0%  { top: -30px;right: 67px; }
+			5%  { top: -30px;right: 67px; }
+			10%{top:-30px;right: 67px;}
+			15%{top:-30px;right: 67px;}
+			20%{top:120px;right: 67px;}
+			50%{top:120px;right: 67px;}
+			100%{top:120px;right:847px; }
+			
+		}
+
+		@-ms-keyframes animaboxyellow
+		{
+			0%  { top: -30px;right: 57px; }
+			5%  { top: -30px;right: 57px; }
+			10%{top:-30px;right: 57px;}
+			15%{top:-30px;right: 57px;}
+			20%{top:-30px;right: 57px;}
+			25%{top:112px;right: 57px;}
+			50%{top:112px;right: 57px;}
+			100%{top:112px;right:837px; }
+			
+		}
+
+		@-ms-keyframes animaboxgreen
+		{
+			0%  { top: -30px;right: 32px; }
+			5%  { top: -30px;right: 32px; }
+			10%{top:-30px;right: 32px;}
+			15%{top:-30px;right: 32px;}
+			20%{top:-30px;right: 32px;}
+			25%{top:-30px;right: 32px;}
+			30%{top:112px;right: 32px;}
+			50%{top:112px;right: 32px;}
+			100%{top:112px;right:812px; }
+			
+		}
+
+		/*Mozilla Firefox*/
+		@-moz-keyframes muestrate
+		{
+			from {opacity: 0.5;}
+			to {opacity: 1;}
+		}
+
+		@-moz-keyframes mover {
+		0%  { right: 0px; }
+		9% { right: 100px; }
+		50% { right: 100px; }
+		
+		100%{ right: 870px; }
+		}
+		
+		@-moz-keyframes animaboxwhite
+		{
+			0%  { top: -30px;right: 20px; }
+			5%  { top: -30px;right: 20px; }
+			10%{top:120px;right: 20px;}
+			50%{top:120px;right: 20px;}
+			100%{top:120px;right:800px; }
+			
+		}
+		@-moz-keyframes animaboxblue
+		{
+			0%  { top: -30px;right: 45px; }
+			5%  { top: -30px;right: 45px; }
+			10%{top:-30px;right: 45px;}
+			15%{top:120px;right: 45px;}
+			50%{top:120px;right: 45px;}
+			100%{top:120px;right:825px; }
+			
+		}
+
+		@-moz-keyframes animaboxred
+		{
+			0%  { top: -30px;right: 67px; }
+			5%  { top: -30px;right: 67px; }
+			10%{top:-30px;right: 67px;}
+			15%{top:-30px;right: 67px;}
+			20%{top:120px;right: 67px;}
+			50%{top:120px;right: 67px;}
+			100%{top:120px;right:847px; }
+			
+		}
+
+		@-moz-keyframes animaboxyellow
+		{
+			0%  { top: -30px;right: 57px; }
+			5%  { top: -30px;right: 57px; }
+			10%{top:-30px;right: 57px;}
+			15%{top:-30px;right: 57px;}
+			20%{top:-30px;right: 57px;}
+			25%{top:112px;right: 57px;}
+			50%{top:112px;right: 57px;}
+			100%{top:112px;right:837px; }
+			
+		}
+
+		@-moz-keyframes animaboxgreen
+		{
+			0%  { top: -30px;right: 32px; }
+			5%  { top: -30px;right: 32px; }
+			10%{top:-30px;right: 32px;}
+			15%{top:-30px;right: 32px;}
+			20%{top:-30px;right: 32px;}
+			25%{top:-30px;right: 32px;}
+			30%{top:112px;right: 32px;}
+			50%{top:112px;right: 32px;}
+			100%{top:112px;right:812px; }
+			
+		}
+		/* Opera */
+		@-o-keyframes muestrate
+		{
+			from {opacity: 0.5;}
+			to {opacity: 1;}
+		}
+
+		@-o-keyframes mover {
+		0%  { right: 0px; }
+		9% { right: 100px; }
+		50% { right: 100px; }
+		
+		100%{ right: 870px; }
+		}
+		
+		@-o-keyframes animaboxwhite
+		{
+			0%  { top: -30px;right: 20px; }
+			5%  { top: -30px;right: 20px; }
+			10%{top:120px;right: 20px;}
+			50%{top:120px;right: 20px;}
+			100%{top:120px;right:800px; }
+			
+		}
+		@-o-keyframes animaboxblue
+		{
+			0%  { top: -30px;right: 45px; }
+			5%  { top: -30px;right: 45px; }
+			10%{top:-30px;right: 45px;}
+			15%{top:120px;right: 45px;}
+			50%{top:120px;right: 45px;}
+			100%{top:120px;right:825px; }
+			
+		}
+
+		@-o-keyframes animaboxred
+		{
+			0%  { top: -30px;right: 67px; }
+			5%  { top: -30px;right: 67px; }
+			10%{top:-30px;right: 67px;}
+			15%{top:-30px;right: 67px;}
+			20%{top:120px;right: 67px;}
+			50%{top:120px;right: 67px;}
+			100%{top:120px;right:847px; }
+			
+		}
+
+		@-o-keyframes animaboxyellow
+		{
+			0%  { top: -30px;right: 57px; }
+			5%  { top: -30px;right: 57px; }
+			10%{top:-30px;right: 57px;}
+			15%{top:-30px;right: 57px;}
+			20%{top:-30px;right: 57px;}
+			25%{top:112px;right: 57px;}
+			50%{top:112px;right: 57px;}
+			100%{top:112px;right:837px; }
+			
+		}
+
+		@-o-keyframes animaboxgreen
+		{
+			0%  { top: -30px;right: 32px; }
+			5%  { top: -30px;right: 32px; }
+			10%{top:-30px;right: 32px;}
+			15%{top:-30px;right: 32px;}
+			20%{top:-30px;right: 32px;}
+			25%{top:-30px;right: 32px;}
+			30%{top:112px;right: 32px;}
+			50%{top:112px;right: 32px;}
+			100%{top:112px;right:812px; }
+			
+		}
+		/*Otros  */
+
+		@keyframes muestrate
+		{
+			from {opacity: 0.5;}
+			to {opacity: 1;}
+		}
+
+		@keyframes mover {
+		0%  { right: 0px; }
+		9% { right: 100px; }
+		50% { right: 100px; }
+		
+		100%{ right: 870px; }
+		}
+		
+		@keyframes animaboxwhite
+		{
+			0%  { top: -30px;right: 20px; }
+			5%  { top: -30px;right: 20px; }
+			10%{top:120px;right: 20px;}
+			50%{top:120px;right: 20px;}
+			100%{top:120px;right:800px; }
+			
+		}
+		@keyframes animaboxblue
+		{
+			0%  { top: -30px;right: 45px; }
+			5%  { top: -30px;right: 45px; }
+			10%{top:-30px;right: 45px;}
+			15%{top:120px;right: 45px;}
+			50%{top:120px;right: 45px;}
+			100%{top:120px;right:825px; }
+			
+		}
+
+		@keyframes animaboxred
+		{
+			0%  { top: -30px;right: 67px; }
+			5%  { top: -30px;right: 67px; }
+			10%{top:-30px;right: 67px;}
+			15%{top:-30px;right: 67px;}
+			20%{top:120px;right: 67px;}
+			50%{top:120px;right: 67px;}
+			100%{top:120px;right:847px; }
+			
+		}
+
+		@keyframes animaboxyellow
+		{
+			0%  { top: -30px;right: 57px; }
+			5%  { top: -30px;right: 57px; }
+			10%{top:-30px;right: 57px;}
+			15%{top:-30px;right: 57px;}
+			20%{top:-30px;right: 57px;}
+			25%{top:112px;right: 57px;}
+			50%{top:112px;right: 57px;}
+			100%{top:112px;right:837px; }
+			
+		}
+
+		@keyframes animaboxgreen
+		{
+			0%  { top: -30px;right: 32px; }
+			5%  { top: -30px;right: 32px; }
+			10%{top:-30px;right: 32px;}
+			15%{top:-30px;right: 32px;}
+			20%{top:-30px;right: 32px;}
+			25%{top:-30px;right: 32px;}
+			30%{top:112px;right: 32px;}
+			50%{top:112px;right: 32px;}
+			100%{top:112px;right:812px; }
+			
+		}
+
+	
